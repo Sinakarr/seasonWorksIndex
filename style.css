@@ -1,0 +1,295 @@
+/* CSS Styling Code File */
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,700&display=swap');
+/* Changes website background color. */
+body {
+  background-color: #fde8cd;
+}
+/* Changes coupon at top of page. */
+.indexCouponAndLogo {
+  margin-left: 365px;
+  color: #025955;
+  width: 800px;
+  text-align: center;
+}
+/* Changes logo. */
+.logo {
+  position: relative;
+  left: 250px;
+}
+
+/* Changes Services Title Text. */
+.servicesTitle {
+  color: #025955;
+}
+
+/* Changes the Contact Us Form */
+.contactUsForm {
+  color: #00917c;
+}
+
+/* Changes the About Us Table. */
+.aboutUsTable {
+  background-color: #eff0b6;
+}
+
+/* Changes Book Now Button. */
+.bookNowButton {
+    padding: 0;
+    list-style-type: none;
+}
+
+.bookNowButtonIndex {
+    margin-left: 626.3px;
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: white;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+.bookNowButtonIndex::before,
+.bookNowButtonIndex::after
+ {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+.bookNowButtonIndex::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+.bookNowButtonIndex::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+
+.bookNowButtonIndex span {
+    position: relative;
+    height: 120%;
+    top: -10%;
+    border: 0.08em solid;
+    background-color: #00917c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+}
+
+.bookNowButtonIndex:hover span {
+    transform: translateX(0.15em);
+}
+
+/*Code for Services Text*/
+.servicesText {
+    padding: 0;
+    list-style-type: none;
+    font: times;
+}
+
+.servicesTextIndex {
+    margin: inherit;
+    margin-left: 65px;
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: #433520;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+.servicesTextIndex::before,
+.servicesTextIndex::after
+ {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+.servicesTextIndex::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+.servicesTextIndex::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+
+.servicesTextIndex span {
+    position: relative;
+    height: 120%;
+    top: -10%;
+    border: 0.08em solid;
+    background-color: #00917c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+}
+
+.servicesTextIndex:hover span {
+    transform: translateX(0.15em);
+}
+
+/*Code for dropdown menu*/
+.hamburger-icon {
+  position: fixed;
+  top: 3vh;
+  left: 2vw;
+  padding-bottom: 2vh;
+  z-index: 11;
+}
+
+.hamburger-icon span {
+  height: 5px;
+  width: 40px;
+  background-color: #00917c;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.7s ease-in-out;
+  transform: none;
+}
+
+#openmenu:checked ~ .menu-pane {
+  left: -5vw;
+  transform: translateX(-5vw);
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+  transform: translate(0%, 175%) rotate(-45deg);
+  background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+  opacity: 0;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+  opacity: 0;
+}
+
+div.menu-pane {
+  background-color: #433520;
+  position: fixed;
+  transform: translateX(-105vw);
+  transform-origin: (0, 0);
+  width: 100vw;
+  height: 100%;
+  transition: 0.6s ease-in-out;
+  z-index: 10;
+}
+
+.menu-pane nav {
+  padding: 10%;
+}
+
+.menu-links li, a, span {
+      transition: 0.5s ease-in-out;
+}
+
+.menu-pane ul {
+  padding: 10%;
+  display: inline-block
+}
+
+.menu-pane li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+    font-size: 1em;
+}
+
+
+.menu-pane li {
+  font-size: 1.3em;
+  margin-left: -10px;
+}
+
+
+.menu-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.menu-links li:hover a {
+  color: #00917c;
+}
+
+.menu-links li:hover a {
+  color: black;
+  background-color: #00917c;
+}
+
+/*#QC-info {
+  background-color: #00917c;
+    border: 2px solid;
+  border-color: #00917c;
+display: block;
+  opacity: 0;
+
+}
+*/
+
+.menu-links li:hover #QC-info {
+opacity: 1;
+}
+
+.menu-links li:hover #DC-info {
+opacity: 1;
+}
+
+/*#DC-info {
+  background-color: #00917c;
+    border: 2px solid;
+  border-color: #00917c;
+display: block;
+  opacity: 0;
+}
+*/
+
+.menu-links li a {
+  padding: 5px;
+}
+
+
+input.hamburger-checkbox {
+  position: absolute;
+  z-index: 3;
+  top: 5vh;
+  left: 5vw;
+  width: 10vw;
+  opacity: 0;
+  height: 6vh;
+}
