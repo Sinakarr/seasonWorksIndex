@@ -1,10 +1,20 @@
 /* CSS Styling Code File */
 /*Imports*/
 @import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,700&display=swap');
-/* Changes website background color. */
+/* Changes website body. */
 body {
   background-color: #fde8cd;
 }
+
+/* Changes section separating lines */
+.separatingLine {
+    border: dotted;
+    border-style: dotted none none;
+    border-width: 10px;
+    width: 10%;
+    color: #025955;
+    opacity: 0.3;
+  }
 /* Changes coupon at top of page. */
 .indexCouponAndLogo {
   margin-left: 365px;
