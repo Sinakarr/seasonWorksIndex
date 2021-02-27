@@ -19,7 +19,8 @@ body {
 
 /* Changes coupon at top of page. */
 .indexCouponAndLogo {
-  margin-left: 25.5%;
+  margin-left: auto;
+  margin-right: auto;
   color: #025955;
   width: 800px;
   text-align: center;
@@ -27,7 +28,7 @@ body {
 /* Changes logo. */
 .logo {
   position: relative;
-  left: 250px;
+  left: 320px;
 }
 
 /* Changes Services Title Text. */
