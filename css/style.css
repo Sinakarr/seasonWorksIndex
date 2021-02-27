@@ -66,6 +66,7 @@ body {
     position: relative;
     margin-top: 0.8em;
     cursor: pointer;
+    margin: auto;
 }
 
 .bookNowButtonIndex::before,
