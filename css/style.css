@@ -31,11 +31,26 @@ body {
 }
 
 /* Changes Services. */
+.services {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .servicesTitle {
   color: #025955;
 }
 
-.services {
+.servicesList {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicesText {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicesButton {
   margin-left: auto;
   margin-right: auto;
 }
